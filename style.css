@@ -1,0 +1,237 @@
+@import url(https://fonts.googleapis.com/css?family=Didact+Gothic|Comfortaa:400,700&subset=latin,cyrillic);
+*{
+    font-family: 'Comfortaa', serif;
+}
+header{
+    height: 70px;
+    width: 100%;
+    border-bottom: 3px solid #88C6BE;
+    margin-bottom: 20px;
+}
+body{
+    margin: 0%;
+}
+header>ul>li{
+    display: inline;
+    width: 50px;
+    margin-right: 10px;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.allCommentsBlock{
+    display: grid; 
+    grid-template-columns: 350px 350px 350px; 
+    grid-column-gap: 40px;
+    grid-row-gap: 20px;
+    margin: auto;
+    width: max-content;
+}
+.btn-group{
+    min-width: 80px;
+    width: max-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: max-content;
+}
+header >div>a{
+    margin-top: auto;
+    margin-bottom: auto;
+    height: max-content;
+}
+.productCard{
+    border:2px solid black;
+}
+.catalogImg{
+    max-width: 100px;
+    max-height: 200px;
+    margin-bottom: 15px;
+}
+.catBlock {
+    border-radius: 10px;
+    padding-top: 15px;
+    text-align: center;
+    align-content: center;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 11px 24px rgba(0, 0, 0, 0.25);
+}
+.coffeeCard{
+    margin: auto;
+    width: 80%;
+
+}
+.coffeeCard > h1{
+    text-align: center;
+}
+.cofSort{
+    grid-area: Sort;
+}
+.cofType{
+    grid-area: Type;
+}
+.cofWeight{
+    grid-area: weight;
+}
+.cofPrice{
+    grid-area: price;
+}
+.cofDesc{
+    grid-area: desc;
+
+}
+.coffeeCard > .infContainer >img{
+    width:200px;
+    grid-area: cardImg;
+    margin-left: 250px;
+}
+.coffeeCard > .infContainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-content: center;
+    grid-template-areas:"cardImg Sort"
+                        "cardImg Type"
+                        "cardImg weight"
+                        "cardImg desc"
+                        "cardImg price";
+}
+form{ 
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+form > input{
+    margin-bottom: 20px;
+    max-width: 300px;
+
+}
+input:valid:not(:placeholder-shown) {
+    border-color: green;
+  }
+  
+  input:invalid:not(:placeholder-shown) {
+    border-color: red;
+  }
+  input:invalid:not(:placeholder-shown) + .form__error {
+    display: block;
+  }
+  .form__error {
+    color: red;
+    text-align: left;
+    font-size: 12px;
+    display: block;
+    margin-top: 3px;
+    display: none;
+  }
+  h1.reg{
+      text-align: center;
+      color: #88C6BE;
+  }
+form > button{
+    background-color: white;
+    color:#88C6BE;
+    border-radius: 20px;
+    border-color: #88C6BE;
+    transition: 0.3s;
+}
+form > button:hover{
+    background-color:  #88C6BE;
+    color:white;
+    border-color: #88C6BE;
+}
+h1.log{
+    text-align: center;
+    color: #88C6BE;
+}
+.toShopCard{
+    margin: auto;
+    width: 180px;
+    height: 30px;
+    color:white;
+    font-size: 11px;
+    border: none;
+    background-color:  #88C6BE;
+    transition: 0.7s;
+}
+.toShopCard:hover{
+    border-radius: 10px;
+    color: #88C6BE;
+    border: 2px solid #88C6BE;
+    background-color: white;
+}
+header .shoppingcard{
+    display: flex;
+    flex-direction: column;
+}
+.prodList{
+    display: flex;
+    flex-direction: column;
+}
+.prodList > tr{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#inputGroupSelect04{
+    margin-bottom: 20px;
+}
+@media screen and (max-width:1280px){
+    .t-container .t-col.t-col_12 div{
+        flex-direction: column;
+    }
+}
+th, td{
+    text-align: center;
+}
+.chooseStatus{
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+    margin: unset;
+}
+.chooseStatus h6{
+    display:none;
+}
+.mainTable{
+    margin-bottom:30px;
+}
+.shcard{
+    width: max-content;
+    margin: auto;
+}
+.shcard .addCol button{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color:white;
+    color: #88C6BE;
+    border: 2px solid #88C6BE;
+}
+.shcard .addCol p{
+    width: 25px;
+}
+.shcard .addCol{
+    margin-top: 35px;
+}
+.gto{
+    background-color: white;
+    color:#88C6BE;
+    border-radius: 20px;
+    border-color: #88C6BE;
+    transition: 0.3s;
+    margin:auto;
+    padding: 7px 30px;
+}
+.gto:hover{
+    background-color:  #88C6BE;
+    color:white;
+    border-color: #88C6BE;
+}
