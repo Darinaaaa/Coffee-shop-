@@ -40,7 +40,7 @@
                 </div>
             </div>
             <a href="registration.php"><div class = "reg btn-group" style = "margin-right:15px">Registration</div></a>
-            <a href="login.php"><div class = "reg btn-group" style = "margin-right:15px">Login</div></a>
+            <a href="login.php"><div class = "reg btn-group" style = "margin-right:15px">Logi</div></a>
         </div>
         
     </header>
